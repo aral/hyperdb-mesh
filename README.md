@@ -68,7 +68,7 @@ mesh.on('ready', function () {
 
 ```
 
-### HyperDb
+### HyperDB
 
 The underlying HyperDB instance is accessible from .db
 
@@ -78,7 +78,7 @@ console.log(mesh.db.key.toString('hex'))
 
 ```
 
-Pass in [HyperDb](https://github.com/mafintosh/hyperdb) options like so:
+Pass in [HyperDB](https://github.com/mafintosh/hyperdb) options like so:
 
 ```js
 

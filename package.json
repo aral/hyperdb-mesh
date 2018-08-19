@@ -1,6 +1,6 @@
 {
   "name": "hyperdb-mesh",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Automatically authorise HyperDB peers to create a mesh",
   "main": "index.js",
   "dependencies": {
