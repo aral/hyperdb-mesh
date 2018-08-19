@@ -71,10 +71,17 @@ mesh.on('ready', function () {
 
 ### hyperdb => mesh.db
 
-Pass in hyperdb options like so:
+Pass in [hyperdb](https://github.com/mafintosh/hyperdb) options like so:
 
 ```js
 
 var mesh = Mesh('./json_api.db', key, { id: 'api', options: { valueEncoding: 'json' } })
 
 ```
+
+### Todo
+
+* Run tests on travis
+* Test on Windows
+* More testing
+* Global password or extra auth strategies for peers
