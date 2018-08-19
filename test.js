@@ -9,6 +9,7 @@ var value = ''
 
 mesh1.on('ready', function () {
   var mesh2 = Mesh(ram, mesh1.db.key, { id: 'mesh2' })
+  console.log(mesh1.db.key.toString('hex'))
   var db2   = mesh2.db
   mesh2.on('ready', function () {
     db1.watch('/test', function () {
