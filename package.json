@@ -1,0 +1,31 @@
+{
+  "name": "hyperdb-mesh",
+  "version": "0.0.1",
+  "description": "Automatically authorise HyperDB peers to create a mesh",
+  "main": "index.js",
+  "dependencies": {
+    "dat-encoding": "^5.0.1",
+    "dat-swarm-defaults": "^1.0.1",
+    "discovery-swarm": "^5.1.2",
+    "hyperdb": "^3.5.0",
+    "random-access-memory": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-onz/hyperdb-mesh.git"
+  },
+  "keywords": [
+    "hyperdb",
+    "discovery-swarm"
+  ],
+  "author": "m-onz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-onz/hyperdb-mesh/issues"
+  },
+  "homepage": "https://github.com/m-onz/hyperdb-mesh#readme"
+}
