@@ -27,7 +27,7 @@ var db   = mesh.db
 
 mesh.on('ready', function () {
 
-  console.log('peer A key ', db.key)
+  console.log('peer A key ', db.key.toString('hex'))
   // bec87d64bfdc33b6b02779666e46a3f01f0aa07f721c2177a44d64c4a6b50afd
 
   db.put('/hello', 'world', function (e) {
@@ -50,7 +50,7 @@ var mesh = Mesh('./demo.db', key, { id: 'mesh2' })
 var db   = mesh.db
 
 mesh.on('ready', function () {
-  console.log('peer A key ', db.key)
+  console.log('peer A key ', db.key.toString('hex'))
   db.get('/hello', function (e, d) {
     if (!e) console.log('winning ', d[0].value)
   })
