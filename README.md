@@ -20,9 +20,10 @@ npm install hyperdb-mesh
 ### Peer A
 
 ```js
+const Mesh = require('hyperdb-mesh')
 
 var mesh = Mesh('./demo.db', null, { id: 'mesh1' })
-var db   = mesh1.db
+var db   = mesh.db
 
 mesh.on('ready', function () {
 
@@ -41,11 +42,12 @@ mesh.on('ready', function () {
 Peer B running in a different computer or folder.
 
 ```js
+const Mesh = require('hyperdb-mesh')
 
 var key = 'bec87d64bfdc33b6b02779666e46a3f01f0aa07f721c2177a44d64c4a6b50afd'
 
 var mesh = Mesh('./demo.db', key, { id: 'mesh2' })
-var db   = mesh1.db
+var db   = mesh.db
 
 mesh.on('ready', function () {
   console.log('peer A key ', db.key)
